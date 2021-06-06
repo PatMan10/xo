@@ -3,13 +3,12 @@
  */
 package xo
 
-class App {
-    val greeting: String
-        get() {
-            return "Hello World!"
-        }
-}
+import xo.board.Board
 
+class App
 fun main() {
-    println(App().greeting)
+    val board = Board()
+    board.mark(4, 'X')
+    board.mark(3, 'O')
+    board.display()
 }
